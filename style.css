@@ -19,15 +19,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
   width: 30.6875em;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
+
 
 /**
  * Clear inner floats
  */
-.clearfix::after {
+ .clearfix::after {
   clear: both;
   content: '';
-  display: table; }
+  display: table;
+}
+
 
 /**
  * Main content containers
@@ -35,7 +39,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
+ .container {
   max-width: 1200px;
   /* 1 */
   margin-left: auto;
@@ -47,26 +51,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding-right: 20px;
   /* 3 */
   width: 100%;
-  /* 1 */ }
+/* 1 */ }
 
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
  */
-.hide-text {
+ .hide-text {
   overflow: hidden;
   padding: 0;
   /* 1 */
   text-indent: 101%;
-  white-space: nowrap; }
+  white-space: nowrap;
+}
+
 
 /**
  * Hide element while making it readable for screen readers
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
-.visually-hidden {
+ .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -74,109 +80,168 @@ Use it to make something cool, have fun, and share what you've learned with othe
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
+
 
 .header-image {
   clear: both;
   margin: -0.875em 0;
-  float: right; }
-  .header-image a {
-    display: block; }
-    .header-image a:hover img {
-      opacity: 1.00; }
-    .header-image a:focus img {
-      opacity: 1.00; }
+  float: right;
+}
+.header-image a {
+  display: block;
+}
+
+.header-image a:hover img {
+  opacity: 1.00;
+}
+
+.header-image a:focus img {
+  opacity: 1.00;
+}
+
 
 .site-title {
   font-family: "Montserrat", "Helvetica Neue", "sans-serif";
   font-size: 1.5rem;
-  font-weight: 700; }
+  font-weight: 700;
+}
+
 
 .site-description {
   color: #686868;
   display: none;
   font-size: 0.85rem;
-  font-weight: 100; }
+  font-weight: 100;
+}
+
 
 .site-branding .site-title a {
-  color: #1a1a1a; }
-  .site-branding .site-title a:hover, .site-branding .site-title a:focus {
-    color: #007acc; }
+  color: #1a1a1a;
+}
+
+.site-branding .site-title a:hover, .site-branding .site-title a:focus {
+  color: #007acc;
+}
+
 
 .site-footer .main-navigation {
-  margin-bottom: 1.75em; }
+  margin-bottom: 1.75em;
+}
+
 
 ul,
 ol {
   margin: 0 0 1.75em 1.25em;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
+
 
 .main-navigation {
-  font-family: "Montserrat", "Helvetica Neue", "sans-serif"; }
-  .main-navigation ul {
-    list-style: none;
-    margin: 0; }
-    .main-navigation ul ul {
-      border-bottom: 1px solid #d1d1d1;
-      left: -999em;
-      margin: 0;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        top: -1px; }
-        .main-navigation ul ul ul:before {
-          border: 0; }
-        .main-navigation ul ul ul:after {
-          border: 0; }
-      .main-navigation ul ul li {
-        margin-left: 1rem;
-        border: 1px solid #d1d1d1;
-        border-bottom-width: 0; }
-        .main-navigation ul ul li:hover > ul {
-          left: auto;
-          right: 100%; }
-        .main-navigation ul ul li.focus > ul {
-          left: auto;
-          right: 100%; }
-      .main-navigation ul ul:before {
-        border-style: solid;
-        content: "";
-        border-color: #d1d1d1 transparent;
-        border-width: 0 10px 10px;
-        right: 9px;
-        top: -9px; }
-      .main-navigation ul ul:after {
-        border-style: solid;
-        content: "";
-        border-color: #fff transparent;
-        border-width: 0 8px 8px;
-        right: 11px;
-        top: -7px; }
-      .main-navigation ul ul .menu-item-has-children > a {
-        padding-right: 2em; }
-        .main-navigation ul ul .menu-item-has-children > a:after {
-          right: 0.55em;
-          top: 0.875em;
-          -webkit-transform: rotate(90deg);
-          -moz-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-          transform: rotate(90deg); }
-  .main-navigation li {
-    border-top: 1px solid #d1d1d1;
-    position: relative; }
-    .main-navigation li:hover > ul {
-      left: auto;
-      right: 0; }
-    .main-navigation li.focus > ul {
-      left: auto;
-      right: 0; }
-  .main-navigation a {
-    display: block;
-    padding: 0.5rem; }
-  .main-navigation .menu-item-has-children > a {
-    margin: 0;
-    padding-right: 2.25em; }
-    .main-navigation .menu-item-has-children > a:after {
-      content: "\f431";
-      right: 0.625em;
-      top: 0.8em; }
+  font-family: "Montserrat", "Helvetica Neue", "sans-serif";
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+}
+
+.main-navigation ul ul {
+  border-bottom: 1px solid #d1d1d1;
+  left: -999em;
+  margin: 0;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  top: -1px;
+}
+
+.main-navigation ul ul ul:before {
+  border: 0;
+}
+
+.main-navigation ul ul ul:after {
+  border: 0;
+}
+
+.main-navigation ul ul li {
+  margin-left: 1rem;
+  border: 1px solid #d1d1d1;
+  border-bottom-width: 0;
+}
+
+.main-navigation ul ul li:hover > ul {
+  left: auto;
+  right: 100%;
+}
+
+.main-navigation ul ul li.focus > ul {
+  left: auto;
+  right: 100%;
+}
+
+.main-navigation ul ul:before {
+  border-style: solid;
+  content: "";
+  border-color: #d1d1d1 transparent;
+  border-width: 0 10px 10px;
+  right: 9px;
+  top: -9px;
+}
+
+.main-navigation ul ul:after {
+  border-style: solid;
+  content: "";
+  border-color: #fff transparent;
+  border-width: 0 8px 8px;
+  right: 11px;
+  top: -7px;
+}
+
+.main-navigation ul ul .menu-item-has-children > a {
+  padding-right: 2em;
+}
+
+.main-navigation ul ul .menu-item-has-children > a:after {
+  right: 0.55em;
+  top: 0.875em;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.main-navigation li {
+  border-top: 1px solid #d1d1d1;
+  position: relative;
+}
+
+.main-navigation li:hover > ul {
+  left: auto;
+  right: 0;
+}
+
+.main-navigation li.focus > ul {
+  left: auto;
+  right: 0;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 0.5rem;
+}
+
+.main-navigation .menu-item-has-children > a {
+  margin: 0;
+  padding-right: 2.25em;
+}
+
+.main-navigation .menu-item-has-children > a:after {
+  content: "\f431";
+  right: 0.625em;
+  top: 0.8em;
+}
+
