@@ -1,0 +1,106 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the image component.
+// -----------------------------------------------------------------------------
+
+
+.site-header-menu {
+    // -webkit-flex: 0 1 100%;
+    // -ms-flex: 0 1 100%;
+    // flex: 0 1 100%;
+    // margin: 0.875em 0;
+}
+.main-navigation {
+    font-family: $fonts-base-stack;
+    ul {
+        list-style: none;
+        margin: 0;
+        ul {
+            border-bottom: 1px solid $gray-light;
+            left: -999em;
+            margin: 0;
+            z-index: 99999;
+            ul {
+                top: -1px;
+                &:before {
+                    border: 0;
+                }
+                &:after {
+                    border: 0;
+                }
+            }
+            li {
+                margin-left: 1rem;
+                border: 1px solid $gray-light;
+                border-bottom-width: 0;
+
+                &:hover > ul {
+                    left: auto;
+                    right: 100%;
+                }
+                &.focus > ul {
+                    left: auto;
+                    right: 100%;
+                }
+            }
+            &:before {
+                border-style: solid;
+                content: "";
+                border-color: $gray-light transparent;
+                border-width: 0 10px 10px;
+                right: 9px;
+                top: -9px;
+            }
+            &:after {
+                border-style: solid;
+                content: "";
+                border-color: $white transparent;
+                border-width: 0 8px 8px;
+                right: 11px;
+                top: -7px;
+            }
+            .menu-item-has-children > a {
+                padding-right: 2em;
+                &:after {
+                    right: 0.55em;
+                    top: 0.875em;
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    li {
+        border-top: 1px solid $gray-light;
+        position: relative;
+        &:hover > ul {
+            left: auto;
+            right: 0;
+        }
+        &.focus > ul {
+            left: auto;
+            right: 0;
+        }
+    }
+    a {
+        display: block;
+        padding: 0.5rem;
+    }
+    .site-header-menu {
+        @extend %menu;
+        > li {
+            @extend %menu;
+        }
+    }
+    .menu-item-has-children > a {
+        margin: 0;
+        padding-right: 2.25em;
+        &:after {
+            content: "\f431";
+            right: 0.625em;
+            top: 0.8em;
+        }
+    }
+}

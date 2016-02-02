@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+//colors
+$black: #1a1a1a;
+$white: #fff;
+
+$gray-light: #d1d1d1;
+$gray: #686868;
+
+$primary: #007acc;
+
+$fonts-base-stack: "Montserrat", "Helvetica Neue", "sans-serif";
+$fonts-heading-stack: "Montserrat", "Helvetica Neue", "sans-serif";
+$fonts-code-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
+
+
+/// Copy text color
+/// @type Color
+$text-color: $black;
+
+
+/// Container's maximum width
+/// Below that is 100%
+/// @type Length
+$max-width: 1200px !default;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+  'small': (min-width: 320px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 1024px),
+) !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

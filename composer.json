@@ -1,0 +1,21 @@
+{
+  "name": "glocalcoop/greenhorns-theme",
+  "description": "Custom Wordpress theme based on Twenty Sixteen",
+  "keywords": ["wordpress", "theme"],
+  "homepage": "https://github.com/glocalcoop/greenhorns-theme",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Pea",
+      "homepage": "https://glocal.coop"
+    }
+  ],
+  "dist": {
+    "type": "git",
+    "url": "https://github.com/glocalcoop/greenhorns-theme.git"
+  },
+  "type": "wordpress-theme",
+  "require": {
+    "composer/installers": "v1.0.21"
+  }
+}

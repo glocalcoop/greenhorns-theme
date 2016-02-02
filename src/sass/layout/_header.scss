@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.site-header {}
+
+.header-image {
+    clear: both;
+    margin: -0.875em 0;
+    float: right;
+    a {
+        display: block;
+        &:hover img {
+            opacity: 1.00;
+        }
+        &:focus img {
+            opacity: 1.00;
+        }
+    }
+}
+
+.site-title {
+    font-family: $fonts-heading-stack;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.site-description {
+    color: $gray;
+    display: none;
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+
+.site-branding .site-title a {
+    color: $black;
+    &:hover,
+    &:focus {
+        color: $primary;
+    }
+}
