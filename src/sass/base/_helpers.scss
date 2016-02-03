@@ -53,3 +53,23 @@
   position: absolute;
   width: 1px;
 }
+
+/**
+ * Add grow effect to elements
+ */
+.grow {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+%menu-item {
+    border: 0;
+    white-space: normal;
+    width: 30.6875em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

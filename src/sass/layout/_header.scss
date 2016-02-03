@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.site-header {}
 
 .header-image {
     clear: both;
@@ -18,23 +17,69 @@
     }
 }
 
-.site-title {
-    font-family: $fonts-heading-stack;
-    font-size: 1.5rem;
-    font-weight: 700;
+.site-branding .site-title a {
+    color: $black;
+    &:hover {
+        color: $gray-light;
+    }
+    &:focus {
+        color: $gray-light;
+    }
 }
 
+.site-header {
+    padding: 1.625em 7.6923%;
+}
+.site-title {
+    font-family: $fonts-heading-stack;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 1.2173913043;
+    margin: 0;
+}
 .site-description {
     color: $gray;
     display: none;
-    font-size: 0.85rem;
+    font-size: 0.8125rem;
     font-weight: 100;
+    line-height: 1.0769230769;
+    margin: 0.538461538em 0 0;
 }
 
-.site-branding .site-title a {
-    color: $black;
-    &:hover,
-    &:focus {
-        color: $primary;
+
+/**
+ * Logo - Displays on smaller screens
+ */
+.site-branding {
+
+        .site-title {
+
+            clip: auto;
+            width: 300px;
+            height: 80px;
+            background-image: url(assets/images/gh_logo-300x79.png);
+            display: inherit;
+            position: inherit !important;
+
+            a {
+                @extend .visually-hidden;
+                display: block;
+                width: 300px;
+                height: 80px;
+            }
+        }
+
+        .site-description {
+            @extend .visually-hidden;
+        }
+
+    @media screen and (min-width: 56.875em) {
+
+        .site-title {
+            display: none;
+        }
+
     }
+
+
 }

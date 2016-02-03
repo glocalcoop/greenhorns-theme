@@ -2,28 +2,29 @@
 // This file contains all styles related to the image component.
 // -----------------------------------------------------------------------------
 
-
-.site-header-menu {}
 .main-navigation {
-
     font-family: $fonts-base-stack;
     ul {
         list-style: none;
         margin: 0;
-
         ul {
-            border-bottom: 1px solid $gray-light;
+            border-bottom: 1px solid $color-primary;
             left: -999em;
             margin: 0;
             z-index: 99999;
-
             ul {
                 top: -1px;
+                &:before {
+                    border: 0;
+                }
+                &:after {
+                    border: 0;
+                }
             }
-
             li {
-                margin-left: 1rem;
-
+                background-color: $white;
+                border: 1px solid $color-primary;
+                border-bottom-width: 0;
                 &:hover > ul {
                     left: auto;
                     right: 100%;
@@ -33,24 +34,42 @@
                     right: 100%;
                 }
             }
-
-
+            a {
+                white-space: normal;
+                width: 12.6875em;
+            }
+            &:before {
+                border-style: solid;
+                content: "";
+                border-color: $color-primary transparent;
+                border-width: 0 10px 10px;
+                right: 9px;
+                top: -9px;
+            }
+            &:after {
+                border-style: solid;
+                content: "";
+                border-color: $white transparent;
+                border-width: 0 8px 8px;
+                right: 11px;
+                top: -7px;
+            }
             .menu-item-has-children > a {
-                padding-right: 2em;
+                padding-right: 2.0625em;
                 &:after {
-                    right: 0.55em;
+                    right: 0.5625em;
                     top: 0.875em;
                     -webkit-transform: rotate(90deg);
                     -moz-transform: rotate(90deg);
                     -ms-transform: rotate(90deg);
+                    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
                     transform: rotate(90deg);
                 }
             }
         }
     }
-
     li {
-        border-top: 1px solid $gray-light;
+        border-top: 1px solid $color-primary;
         position: relative;
         &:hover > ul {
             left: auto;
@@ -61,30 +80,109 @@
             right: 0;
         }
     }
-
     a {
+        color: $black;
         display: block;
-        padding: 0.5rem;
+        line-height: 1.3125;
+        outline-offset: -1px;
+        padding: 0.84375em 0;
     }
-
     .site-header-menu {
-        @extend %menu;
+        @extend %menu-item;
         > li {
-            @extend %menu;
+            @extend %menu-item;
         }
     }
-
     .menu-item-has-children > a {
         margin: 0;
         padding-right: 2.25em;
-    }
-
-    .menu-image-title {
-        @extend .visually-hidden;
-    }
-
-    .menu-image {
-        width: 100%;
-        height: auto;
+        &:after {
+            content: "\f431";
+            right: 0.625em;
+            top: 0.8125em;
+        }
     }
 }
+
+.site-header-menu {
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 0.875em 0;
+}
+
+/**
+ * External Nav
+ */
+.site-header {
+
+    .site-header-menu {
+        width: 100%;
+
+        .menu-external-links-container {
+            display: table;
+             width: 100%;
+
+            ul {
+                display: table-row;
+
+                li {
+                    display: table-cell;
+                    text-align: center;
+
+                    // width:  149px; 15%
+                    // width:  112px; 11%
+                    // width:  213px; 22%
+                    // width:  209px; 21%
+                    // width:  304px; 31%
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &.blog {
+                        width: 15%;
+                        img {
+                            max-width: 149px;
+                        }
+                    }
+                    &.farm-hack {
+                        width: 11%;
+                        img {
+                            max-width: 112px;
+                        }
+                    }
+                    &.donate {
+                        width: 22%;
+                        img {
+                            max-width: 213px;
+                        }
+                    }
+                    &.join-mailing-list {
+                        width: 21%;
+                        img {
+                            max-width: 209px;
+                        }
+                    }
+                    &.our-land {
+                        width: 31%;
+                        img {
+                            max-width: 304px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.menu-image-title {
+    @extend .visually-hidden;
+}
+
+.menu-image {
+    @extend .grow;
+}
+
