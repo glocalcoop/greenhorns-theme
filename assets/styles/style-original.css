@@ -1,0 +1,194 @@
+/* Add Custom CSS after this line */
+
+
+ul,
+ol {
+    margin: 0 0 1.75em 1.25em;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+
+}
+
+ol {
+    list-style: none;
+
+}
+
+.header-image {
+    clear: both;
+    margin: -0.875em 0;
+    float: right;
+
+}
+
+.header-image a {
+    display: block;
+}
+
+.header-image a:hover img,
+.header-image a:focus img {
+    opacity: 1.00;
+
+}
+.site-header-menu {
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 0.875em 0;
+}
+
+.main-navigation {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.site-footer .main-navigation {
+    margin-bottom: 1.75em;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+}
+
+.main-navigation li {
+    border-top: 1px solid #d1d1d1;
+    position: relative;
+}
+
+.main-navigation a {
+    color: #1a1a1a;
+    display: block;
+    line-height: 1.3125;
+    outline-offset: -1px;
+    padding: 0.84375em 0;
+}
+
+.site-header {
+    padding: 1.625em 7.6923%;
+}
+
+.site-title {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-size: 23px;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 1.2173913043;
+    margin: 0;
+}
+
+.site-branding .site-title a {
+    color: #1a1a1a;
+}
+
+.site-branding .site-title a:hover,
+.site-branding .site-title a:focus {
+    color: #007acc;
+}
+
+.site-description {
+    color: #686868;
+    display: none;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 100;
+    line-height: 1.0769230769;
+    margin: 0.538461538em 0 0;
+}
+
+}
+
+    .main-navigation ul ul {
+        border-bottom: 1px solid #d1d1d1;
+        left: -999em;
+        margin: 0;
+        z-index: 99999;
+    }
+
+    .main-navigation ul ul ul {
+        top: -1px;
+    }
+
+    .main-navigation ul ul ul:before,
+    .main-navigation ul ul ul:after {
+        border: 0;
+    }
+
+    .main-navigation ul ul li {
+        background-color: #fff;
+        border: 1px solid #d1d1d1;
+        border-bottom-width: 0;
+    }
+
+    .main-navigation ul ul a {
+        white-space: normal;
+        width: 12.6875em;
+    }
+
+    .main-navigation ul ul:before,
+    .main-navigation ul ul:after {
+        border-style: solid;
+        content: "";
+    }
+
+    .main-navigation ul ul:before {
+        border-color: #d1d1d1 transparent;
+        border-width: 0 10px 10px;
+        right: 9px;
+        top: -9px;
+    }
+
+    .main-navigation ul ul:after {
+        border-color: #fff transparent;
+        border-width: 0 8px 8px;
+        right: 11px;
+        top: -7px;
+    }
+
+    .main-navigation li:hover > ul,
+    .main-navigation li.focus > ul {
+        left: auto;
+        right: 0;
+    }
+
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+        left: auto;
+        right: 100%;
+    }
+
+    .main-navigation .menu-item-has-children > a {
+        margin: 0;
+        padding-right: 2.25em;
+    }
+
+    .main-navigation .menu-item-has-children > a:after {
+        content: "\f431";
+        right: 0.625em;
+        top: 0.8125em;
+    }
+
+    .main-navigation ul ul .menu-item-has-children > a {
+        padding-right: 2.0625em;
+    }
+
+    .main-navigation ul ul .menu-item-has-children > a:after {
+        right: 0.5625em;
+        top: 0.875em;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .main-navigation .site-header-menu,
+    .main-navigation .site-header-menu > li {
+        border: 0;
+        white-space: normal;
+        width: 30.6875em;
+        margin:0;
+            padding:0;
+            list-style:none;
+    }
