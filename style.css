@@ -16,7 +16,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /**
  * Clear inner floats
  */
- .clearfix::after {
+ .clearfix::after,
+ .header-image::after,
+ .main-navigation::after {
   clear: both;
   content: '';
   display: table;
@@ -182,7 +184,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
       list-style: none;
     }
 
+    .header-image {
+      float: none;
+    }
+    .header-image img {
+      width: 100%;
+      height: auto;
+      min-width: 300px;
+    }
+
     .main-navigation {
+      margin-top: .75em;
       font-family: "Montserrat", "Helvetica Neue", "sans-serif";
     }
     .main-navigation ul {
@@ -265,7 +277,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
       display: block;
       line-height: 1.3125;
       outline-offset: -1px;
-      padding: 0.84375em 0;
+      padding: 0.25em 0;
     }
     .main-navigation .menu-item-has-children > a {
       margin: 0;

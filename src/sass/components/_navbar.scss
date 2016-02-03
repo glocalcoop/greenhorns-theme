@@ -3,10 +3,14 @@
 // -----------------------------------------------------------------------------
 
 .main-navigation {
+    @extend .clearfix;
+    margin-top: .75em;
     font-family: $fonts-base-stack;
+
     ul {
         list-style: none;
         margin: 0;
+
         ul {
             border-bottom: 1px solid $color-primary;
             left: -999em;
@@ -85,7 +89,7 @@
         display: block;
         line-height: 1.3125;
         outline-offset: -1px;
-        padding: 0.84375em 0;
+        padding: 0.25em 0;
     }
     .site-header-menu {
         @extend %menu-item;

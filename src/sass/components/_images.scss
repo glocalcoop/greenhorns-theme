@@ -2,4 +2,12 @@
 // This file contains all styles related to the image component.
 // -----------------------------------------------------------------------------
 
-
+.header-image {
+    @extend .clearfix;
+    float: none;
+    img {
+        width: 100%;
+        height: auto;
+        min-width: 300px;
+    }
+}
