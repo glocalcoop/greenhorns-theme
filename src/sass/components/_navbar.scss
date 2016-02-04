@@ -118,68 +118,56 @@
 /**
  * External Nav
  */
-.site-header {
+.external-navigation {
+    width: 100%;
 
-    .site-header-menu {
+    &> div {
+        display: table;
         width: 100%;
 
-        .menu-external-links-container {
-            display: table;
-             width: 100%;
+        ul {
+            display: table-row;
+            li {
+                display: table-cell;
+                text-align: center;
 
-            ul {
-                display: table-row;
+                img {
+                    width: 100%;
+                }
 
-                li {
-                    display: table-cell;
-                    text-align: center;
-
-                    // width:  149px; 15%
-                    // width:  112px; 11%
-                    // width:  213px; 22%
-                    // width:  209px; 21%
-                    // width:  304px; 31%
-
+                &.blog {
+                    width: 15%;
                     img {
-                        width: 100%;
+                        max-width: 149px;
                     }
-
-                    &.blog {
-                        width: 15%;
-                        img {
-                            max-width: 149px;
-                        }
+                }
+                &.farm-hack {
+                    width: 11%;
+                    img {
+                        max-width: 112px;
                     }
-                    &.farm-hack {
-                        width: 11%;
-                        img {
-                            max-width: 112px;
-                        }
+                }
+                &.donate {
+                    width: 22%;
+                    img {
+                        max-width: 213px;
                     }
-                    &.donate {
-                        width: 22%;
-                        img {
-                            max-width: 213px;
-                        }
+                }
+                &.join-mailing-list {
+                    width: 21%;
+                    img {
+                        max-width: 209px;
                     }
-                    &.join-mailing-list {
-                        width: 21%;
-                        img {
-                            max-width: 209px;
-                        }
+                }
+                &.our-land {
+                    width: 31%;
+                    img {
+                        max-width: 304px;
                     }
-                    &.our-land {
-                        width: 31%;
-                        img {
-                            max-width: 304px;
-                        }
-                    }
-
                 }
             }
         }
     }
-
 }
 
 .menu-image-title {

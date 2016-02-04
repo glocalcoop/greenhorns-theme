@@ -52,26 +52,26 @@
  */
 .site-branding {
 
-        .site-title {
+    .site-title {
 
-            clip: auto;
+        clip: auto;
+        width: 300px;
+        height: 80px;
+        background-image: url(assets/images/gh_logo-300x79.png);
+        display: inherit;
+        position: inherit !important;
+
+        a {
+            @extend .visually-hidden;
+            display: block;
             width: 300px;
             height: 80px;
-            background-image: url(assets/images/gh_logo-300x79.png);
-            display: inherit;
-            position: inherit !important;
-
-            a {
-                @extend .visually-hidden;
-                display: block;
-                width: 300px;
-                height: 80px;
-            }
         }
+    }
 
-        .site-description {
-            @extend .visually-hidden;
-        }
+    .site-description {
+        @extend .visually-hidden;
+    }
 
     @media screen and (min-width: 56.875em) {
 
