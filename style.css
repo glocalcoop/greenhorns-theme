@@ -16,29 +16,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /**
  * Add grow effect to elements
  */
- @import url(https://fonts.googleapis.com/css?family=Amatic+SC|Loved+by+the+King);
- .handwriting1,
- .handwriting2 {
+/**
+ * Visually show and hide elements
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Loved+by+the+King);
+.handwriting1,
+.handwriting2 {
   font-size: 2.5rem !important;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .handwriting1 {
-  font-family: "Amatic SC", "Loved by the King";
-}
+  font-family: "Amatic SC", "Loved by the King"; }
 
 .handwriting2 {
-  font-family: "Loved by the King", "Amatic SC";
-}
+  font-family: "Loved by the King", "Amatic SC"; }
 
 /**
  * Clear inner floats
  */
- .clearfix::after, .header-image::after, .main-navigation::after {
+.clearfix::after, .header-image::after {
   clear: both;
   content: '';
-  display: table;
-}
+  display: table; }
 
 /**
  * Main content containers
@@ -46,7 +46,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
- .container {
+.container {
   max-width: 1200px;
   /* 1 */
   margin-left: auto;
@@ -58,36 +58,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding-right: 20px;
   /* 3 */
   width: 100%;
-/* 1 */ }
+  /* 1 */ }
 
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
  */
- .hide-text {
+.hide-text {
   overflow: hidden;
   padding: 0;
   /* 1 */
   text-indent: 101%;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 /**
  * Hide element while making it readable for screen readers
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
- /**
- * External Nav Disable Plugin Styles Test
- */
- .visually-hidden, 
- .site-branding .site-title a, 
- .site-branding .site-description, 
- li.farm-hack .hovered-image, 
- li.farm-hack:hover .menu-image, 
- li.farm-hack:focus .menu-image, 
- .menu-image-title {
+.visually-hidden, .site-branding .site-title a, .site-branding .site-description {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -95,14 +85,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
-/**
- * External Nav Disable Plugin Styles Test
- */
-.show, 
-li.farm-hack:hover .hovered-image, 
-li.farm-hack:focus .hovered-image {
+  width: 1px; }
+
+.show {
   border: 0;
   clip: auto;
   height: auto;
@@ -110,64 +95,43 @@ li.farm-hack:focus .hovered-image {
   overflow: auto;
   padding: 0;
   position: inherit;
-  width: auto;
-}
+  width: auto; }
 
 /**
  * Add grow effect to elements
  */
- .grow {
-  transition: all .2s ease-in-out;
-}
-.grow:hover, .grow:focus {
-  transform: scale(1.1);
-}
-
-.main-navigation .site-header-menu, .main-navigation .site-header-menu > li {
-  border: 0;
-  white-space: normal;
-  width: 30.6875em;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+.grow {
+  transition: all .2s ease-in-out; }
+  .grow:hover, .grow:focus {
+    transform: scale(1.1); }
 
 .header-image {
   clear: both;
   margin: -0.875em 0;
-  float: right;
-}
-.header-image a {
-  display: block;
-}
-.header-image a:hover img {
-  opacity: 1.00;
-}
-.header-image a:focus img {
-  opacity: 1.00;
-}
+  float: right; }
+  .header-image a {
+    display: block; }
+    .header-image a:hover img {
+      opacity: 1.00; }
+    .header-image a:focus img {
+      opacity: 1.00; }
 
 .site-branding .site-title a {
-  color: #1a1a1a;
-}
-.site-branding .site-title a:hover {
-  color: #d1d1d1;
-}
-.site-branding .site-title a:focus {
-  color: #d1d1d1;
-}
+  color: #1a1a1a; }
+  .site-branding .site-title a:hover {
+    color: #d1d1d1; }
+  .site-branding .site-title a:focus {
+    color: #d1d1d1; }
 
 .site-header {
-  padding: 1.625em 7.6923%;
-}
+  padding: 1.625em 7.6923%; }
 
 .site-title {
   font-family: "Montserrat", "Helvetica Neue", "sans-serif";
   font-size: 1.4375rem;
   font-weight: 700;
   line-height: 1.2173913043;
-  margin: 0;
-}
+  margin: 0; }
 
 .site-description {
   color: #686868;
@@ -175,224 +139,91 @@ li.farm-hack:focus .hovered-image {
   font-size: 0.8125rem;
   font-weight: 100;
   line-height: 1.0769230769;
-  margin: 0.538461538em 0 0;
-}
+  margin: 0.538461538em 0 0; }
 
 /**
  * Logo - Displays on smaller screens
  */
- .site-branding .site-title {
+.site-branding .site-title {
   clip: auto;
   width: 300px;
   height: 80px;
   background-image: url(assets/images/gh_logo.png);
   display: inherit;
-  position: inherit !important;
-}
-.site-branding .site-title a {
-  display: block;
-  width: 300px;
-  height: 80px;
-}
+  position: inherit !important; }
+  .site-branding .site-title a {
+    display: block;
+    width: 300px;
+    height: 80px; }
 
 @media screen and (min-width: 56.875em) {
   .site-branding .site-title {
-    display: none;
-    } }
+    display: none; } }
 
-    .site-footer .main-navigation {
-      margin-bottom: 1.75em;
-    }
+.site-footer .main-navigation {
+  margin-bottom: 1.75em; }
 
-    ul {
-      margin: 0 0 1.75em 1.25em;
-      padding: 0;
-      list-style: none;
-    }
+ul {
+  margin: 0 0 1.75em 1.25em;
+  padding: 0;
+  list-style: none; }
 
-    ol {
-      margin: 0 0 1.75em 1.25em;
-      padding: 0;
-      list-style: none;
-    }
+ol {
+  margin: 0 0 1.75em 1.25em;
+  padding: 0;
+  list-style: none; }
 
-    .header-image {
-      float: none;
-    }
-    .header-image img {
-      width: 100%;
-      height: auto;
-      min-width: 300px;
-    }
+.header-image {
+  float: none; }
+  .header-image img {
+    width: 100%;
+    height: auto;
+    min-width: 300px; }
 
-    .main-navigation {
-      margin-top: .75em;
-      font-family: "Montserrat", "Helvetica Neue", "sans-serif";
-    }
-    .main-navigation ul {
-      list-style: none;
-      margin: 0;
-    }
-    .main-navigation ul ul {
-      border-bottom: 1px solid #007acc;
-      left: -999em;
-      margin: 0;
-      z-index: 99999;
-    }
-    .main-navigation ul ul ul {
-      top: -1px;
-    }
-    .main-navigation ul ul ul:before {
-      border: 0;
-    }
-    .main-navigation ul ul ul:after {
-      border: 0;
-    }
-    .main-navigation ul ul li {
-      background-color: #fff;
-      border: 1px solid #007acc;
-      border-bottom-width: 0;
-    }
-    .main-navigation ul ul li:hover > ul {
-      left: auto;
-      right: 100%;
-    }
-    .main-navigation ul ul li.focus > ul {
-      left: auto;
-      right: 100%;
-    }
-    .main-navigation ul ul a {
-      white-space: normal;
-      width: 12.6875em;
-    }
-    .main-navigation ul ul:before {
-      border-style: solid;
-      content: "";
-      border-color: #007acc transparent;
-      border-width: 0 10px 10px;
-      right: 9px;
-      top: -9px;
-    }
-    .main-navigation ul ul:after {
-      border-style: solid;
-      content: "";
-      border-color: #fff transparent;
-      border-width: 0 8px 8px;
-      right: 11px;
-      top: -7px;
-    }
-    .main-navigation ul ul .menu-item-has-children > a {
-      padding-right: 2.0625em;
-    }
-    .main-navigation ul ul .menu-item-has-children > a:after {
-      right: 0.5625em;
-      top: 0.875em;
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-    }
-    .main-navigation li {
-      border-top: 1px solid #007acc;
-      position: relative;
-    }
-    .main-navigation li:hover > ul {
-      left: auto;
-      right: 0;
-    }
-    .main-navigation li.focus > ul {
-      left: auto;
-      right: 0;
-    }
-    .main-navigation a {
-      color: #1a1a1a;
-      display: block;
-      line-height: 1.3125;
-      outline-offset: -1px;
-      padding: 0.25em 0;
-    }
-    .main-navigation .menu-item-has-children > a {
-      margin: 0;
-      padding-right: 2.25em;
-    }
-    .main-navigation .menu-item-has-children > a:after {
-      content: "\f431";
-      right: 0.625em;
-      top: 0.8125em;
-    }
+@media screen and (max-width: 56.874em) {
+  .menu-image,
+  .hovered-mage {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+  #site-navigation {
+    margin-top: 1em; } }
 
-    .site-header-menu {
-      -webkit-flex: 0 1 100%;
-      -ms-flex: 0 1 100%;
-      flex: 0 1 100%;
-      margin: 0.875em 0;
-    }
-
-/**
- * External Nav
- */
- .external-navigation {
-  width: 100%;
-}
-.external-navigation > div {
-  display: table;
-  width: 100%;
-}
-.external-navigation > div ul {
-  display: table-row;
-}
-.external-navigation > div ul li {
-  display: table-cell;
-  text-align: center;
-}
-.external-navigation > div ul li img {
-  width: 100%;
-}
-.external-navigation > div ul li.blog {
-  width: 15%;
-}
-.external-navigation > div ul li.blog img {
-  max-width: 149px;
-}
-.external-navigation > div ul li.farm-hack {
-  width: 11%;
-}
-.external-navigation > div ul li.farm-hack img {
-  max-width: 112px;
-}
-.external-navigation > div ul li.donate {
-  width: 22%;
-}
-.external-navigation > div ul li.donate img {
-  max-width: 213px;
-}
-.external-navigation > div ul li.join-mailing-list {
-  width: 21%;
-}
-.external-navigation > div ul li.join-mailing-list img {
-  max-width: 209px;
-}
-.external-navigation > div ul li.our-land {
-  width: 31%;
-}
-.external-navigation > div ul li.our-land img {
-  max-width: 304px;
-}
-
-/**
- * External Nav Transparent Image Test
- */
- .external-navigation .blog img {
-  background-color: #333;
-}
-.external-navigation .blog img:hover, 
-.external-navigation .blog img:focus {
-  background-color: #007acc;
-}
-
-/**
- * External Nav Disable Plugin Styles Test
- */
- .hovered-image {
-  margin-left: 0 !important;
-}
+@media screen and (min-width: 56.875em) {
+  .menu-image-title {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+  li li .menu-image-title {
+    border: 0;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: inherit;
+    width: auto; }
+  .site-header-menu {
+    width: 100%; }
+  #external-link-navigation a {
+    padding: .2em;
+    display: block;
+    width: 100%; }
+  #external-link-navigation img {
+    display: block;
+    max-width: 100%;
+    width: 100%; }
+  #external-link-navigation .menu-item-has-children a {
+    padding-right: 1em; }
+  #external-link-navigation li li a {
+    padding: 0.65625em 0.875em; } }

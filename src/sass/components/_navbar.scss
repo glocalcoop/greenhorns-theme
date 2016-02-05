@@ -2,214 +2,64 @@
 // This file contains all styles related to the image component.
 // -----------------------------------------------------------------------------
 
-.main-navigation {
-    @extend .clearfix;
-    margin-top: .75em;
-    font-family: $fonts-base-stack;
 
-    ul {
-        list-style: none;
-        margin: 0;
+@media screen and (max-width: 56.874em) {
+    // Hide images on smaller screens
+    .menu-image,
+    .hovered-mage {
+       @include visually-hidden;
+    }
 
-        ul {
-            border-bottom: 1px solid $color-primary;
-            left: -999em;
-            margin: 0;
-            z-index: 99999;
-            ul {
-                top: -1px;
-                &:before {
-                    border: 0;
-                }
-                &:after {
-                    border: 0;
-                }
-            }
-            li {
-                background-color: $white;
-                border: 1px solid $color-primary;
-                border-bottom-width: 0;
-                &:hover > ul {
-                    left: auto;
-                    right: 100%;
-                }
-                &.focus > ul {
-                    left: auto;
-                    right: 100%;
-                }
-            }
-            a {
-                white-space: normal;
-                width: 12.6875em;
-            }
-            &:before {
-                border-style: solid;
-                content: "";
-                border-color: $color-primary transparent;
-                border-width: 0 10px 10px;
-                right: 9px;
-                top: -9px;
-            }
-            &:after {
-                border-style: solid;
-                content: "";
-                border-color: $white transparent;
-                border-width: 0 8px 8px;
-                right: 11px;
-                top: -7px;
-            }
-            .menu-item-has-children > a {
-                padding-right: 2.0625em;
-                &:after {
-                    right: 0.5625em;
-                    top: 0.875em;
-                    -webkit-transform: rotate(90deg);
-                    -moz-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-                    transform: rotate(90deg);
-                }
-            }
+    // Apply to main nav only
+    #site-navigation {
+        margin-top: 1em;
+    }    
+}
+
+@media screen and (min-width: 56.875em) {
+    // Hide text on non-mobile screens
+
+    .menu-image-title {
+        @include visually-hidden;
+    }
+
+    li li {
+        .menu-image-title {
+            @include show;
         }
     }
-    li {
-        border-top: 1px solid $color-primary;
-        position: relative;
-        &:hover > ul {
-            left: auto;
-            right: 0;
-        }
-        &.focus > ul {
-            left: auto;
-            right: 0;
-        }
-    }
-    a {
-        color: $black;
-        display: block;
-        line-height: 1.3125;
-        outline-offset: -1px;
-        padding: 0.25em 0;
-    }
+
     .site-header-menu {
-        @extend %menu-item;
-        > li {
-            @extend %menu-item;
-        }
-    }
-    .menu-item-has-children > a {
-        margin: 0;
-        padding-right: 2.25em;
-        &:after {
-            content: "\f431";
-            right: 0.625em;
-            top: 0.8125em;
-        }
-    }
-}
-
-.site-header-menu {
-    -webkit-flex: 0 1 100%;
-    -ms-flex: 0 1 100%;
-    flex: 0 1 100%;
-    margin: 0.875em 0;
-}
-
-/**
- * External Nav
- */
-.external-navigation {
-    width: 100%;
-
-    &> div {
-        display: table;
         width: 100%;
-
-        ul {
-            display: table-row;
-            li {
-                display: table-cell;
-                text-align: center;
-
-                img {
-                    width: 100%;
-                }
-
-                &.blog {
-                    width: 15%;
-                    img {
-                        max-width: 149px;
-                    }
-                }
-                &.farm-hack {
-                    width: 11%;
-                    img {
-                        max-width: 112px;
-                    }
-                }
-                &.donate {
-                    width: 22%;
-                    img {
-                        max-width: 213px;
-                    }
-                }
-                &.join-mailing-list {
-                    width: 21%;
-                    img {
-                        max-width: 209px;
-                    }
-                }
-                &.our-land {
-                    width: 31%;
-                    img {
-                        max-width: 304px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/**
- * External Nav Transparent Image Test
- */
-.external-navigation {
-    .blog img {
-        background-color: $gray-dark;
-
-        &:hover,
-        &:focus {
-            background-color: $color-primary;
-        }
-    }
-}
-
-/**
- * External Nav Disable Plugin Styles Test
- */
-li.farm-hack {
-
-    .hovered-image {
-        @extend .visually-hidden;
     }
 
-    &:hover,
-    &:focus {
-        .menu-image {
-            @extend .visually-hidden;
+    // Apply to external links only
+    #external-link-navigation {
+
+        a {
+            padding: .2em;
+            display: block;
+            width: 100%;
         }
-        .hovered-image {
-            @extend .show;
+
+        img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
         }
+
+        .menu-item-has-children a {
+            padding-right: 1em;
+        }
+
+        li li a {
+            padding: 0.65625em 0.875em;
+        }
+
+
     }
+
+
+
+
 }
-
-.hovered-image {
-    margin-left: 0 !important;
-}
-
-.menu-image-title {
-    @extend .visually-hidden;
-}
-
-
