@@ -61,14 +61,11 @@
 
 
 						<?php if ( has_nav_menu( 'external' ) ) : ?>
-							<nav id="external-link-navigation" class="external-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentysixteen' ); ?>">
+							<nav id="external-link-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Links Links Menu', 'twentysixteen' ); ?>">
 								<?php
 									wp_nav_menu( array(
 										'theme_location' => 'external',
-										'menu_class'     => 'external-links-menu',
-										'depth'          => 1,
-										'link_before'    => '<span class="screen-reader-text">',
-										'link_after'     => '</span>',
+										'menu_class'     => 'primary-menu'
 									) );
 								?>
 							</nav><!-- .social-navigation -->
