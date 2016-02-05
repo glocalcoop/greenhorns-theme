@@ -78,6 +78,9 @@ add_action( 'after_setup_theme', 'greenhorns_setup' );
  */
 function greenhorns_enqueue_styles() {
 
+    // Dequeue Menu Image plugin styling
+    wp_dequeue_style( 'menu-image' );
+
     $parent_style = 'parent-style';
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );

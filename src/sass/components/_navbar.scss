@@ -170,11 +170,46 @@
     }
 }
 
+/**
+ * External Nav Transparent Image Test
+ */
+.external-navigation {
+    .blog img {
+        background-color: $gray-dark;
+
+        &:hover,
+        &:focus {
+            background-color: $color-primary;
+        }
+    }
+}
+
+/**
+ * External Nav Disable Plugin Styles Test
+ */
+li.farm-hack {
+
+    .hovered-image {
+        @extend .visually-hidden;
+    }
+
+    &:hover,
+    &:focus {
+        .menu-image {
+            @extend .visually-hidden;
+        }
+        .hovered-image {
+            @extend .show;
+        }
+    }
+}
+
+.hovered-image {
+    margin-left: 0 !important;
+}
+
 .menu-image-title {
     @extend .visually-hidden;
 }
 
-.menu-image {
-    @extend .grow;
-}
 

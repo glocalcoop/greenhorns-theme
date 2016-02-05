@@ -23,6 +23,17 @@
   }
 }
 
+/**
+ * Add grow effect to elements
+ */
+@mixin grow($scale: 1.1) {
+  transition: all .2s ease-in-out;
+  &:hover,
+  &:focus {
+    transform: scale($scale);
+  }
+}
+
 /// Make a context based selector a little more friendly
 /// @author Hugo Giraudel
 /// @param {String} $context

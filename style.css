@@ -13,9 +13,12 @@ Template: twentysixteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Loved+by+the+King);
-.handwriting1,
-.handwriting2 {
+/**
+ * Add grow effect to elements
+ */
+ @import url(https://fonts.googleapis.com/css?family=Amatic+SC|Loved+by+the+King);
+ .handwriting1,
+ .handwriting2 {
   font-size: 2.5rem !important;
   text-transform: uppercase;
 }
@@ -55,8 +58,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding-right: 20px;
   /* 3 */
   width: 100%;
-  /* 1 */
-}
+/* 1 */ }
 
 /**
  * Hide text while making it readable for screen readers
@@ -76,7 +78,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
- .visually-hidden, .site-branding .site-title a, .site-branding .site-description, .menu-image-title {
+ /**
+ * External Nav Disable Plugin Styles Test
+ */
+ .visually-hidden, 
+ .site-branding .site-title a, 
+ .site-branding .site-description, 
+ li.farm-hack .hovered-image, 
+ li.farm-hack:hover .menu-image, 
+ li.farm-hack:focus .menu-image, 
+ .menu-image-title {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -86,14 +97,29 @@ Use it to make something cool, have fun, and share what you've learned with othe
   position: absolute;
   width: 1px;
 }
+/**
+ * External Nav Disable Plugin Styles Test
+ */
+.show, 
+li.farm-hack:hover .hovered-image, 
+li.farm-hack:focus .hovered-image {
+  border: 0;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: inherit;
+  width: auto;
+}
 
 /**
  * Add grow effect to elements
  */
- .grow, .menu-image {
+ .grow {
   transition: all .2s ease-in-out;
 }
-.grow:hover, .menu-image:hover, .grow:focus, .menu-image:focus {
+.grow:hover, .grow:focus {
   transform: scale(1.1);
 }
 
@@ -159,7 +185,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   clip: auto;
   width: 300px;
   height: 80px;
-  background-image: url(assets/images/gh_logo-300x79.png);
+  background-image: url(assets/images/gh_logo.png);
   display: inherit;
   position: inherit !important;
 }
@@ -351,4 +377,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 .external-navigation > div ul li.our-land img {
   max-width: 304px;
+}
+
+/**
+ * External Nav Transparent Image Test
+ */
+ .external-navigation .blog img {
+  background-color: #333;
+}
+.external-navigation .blog img:hover, 
+.external-navigation .blog img:focus {
+  background-color: #007acc;
+}
+
+/**
+ * External Nav Disable Plugin Styles Test
+ */
+ .hovered-image {
+  margin-left: 0 !important;
 }

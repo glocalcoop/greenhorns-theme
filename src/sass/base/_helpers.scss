@@ -54,6 +54,17 @@
   width: 1px;
 }
 
+.show { 
+  border: 0;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: inherit;
+  width: auto;
+}
+
 /**
  * Add grow effect to elements
  */
