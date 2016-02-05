@@ -61,7 +61,7 @@
 
 
 						<?php if ( has_nav_menu( 'external' ) ) : ?>
-							<nav id="external-link-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Links Links Menu', 'twentysixteen' ); ?>">
+							<nav id="external-link-navigation" class="main-navigation external-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Links Links Menu', 'twentysixteen' ); ?>">
 								<?php
 									wp_nav_menu( array(
 										'theme_location' => 'external',
