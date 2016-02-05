@@ -87,6 +87,18 @@
                     background-repeat: no-repeat;
                     text-align: center;
 
+                    &:not(:last-child):after {
+                        content: "";
+                        width: 10px;
+                        height: 60px;
+                        background-image: url(assets/images/nav/divider.png);
+                        background-position: top center;
+                        top: 0;
+                        right: 0;
+                        position: absolute;
+                        display: inline-block;
+                    }
+
                     img {
                         width: 100%;
                     }
