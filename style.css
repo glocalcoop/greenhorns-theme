@@ -165,183 +165,184 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @media screen and (min-width: 56.875em) {
   .site-branding .site-title {
     display: none;
-    } }
+  }
+}
 
-    .site-footer .main-navigation {
-      margin-bottom: 1.75em;
-    }
+.site-footer .main-navigation {
+  margin-bottom: 1.75em;
+}
 
-    ul {
-      margin: 0 0 1.75em 1.25em;
-      padding: 0;
-      list-style: none;
-    }
+ul {
+  margin: 0 0 1.75em 1.25em;
+  padding: 0;
+  list-style: none;
+}
 
-    ol {
-      margin: 0 0 1.75em 1.25em;
-      padding: 0;
-      list-style: none;
-    }
+ol {
+  margin: 0 0 1.75em 1.25em;
+  padding: 0;
+  list-style: none;
+}
 
-    .header-image {
-      float: none;
-    }
-    .header-image img {
-      width: 100%;
-      height: auto;
-      min-width: 300px;
-    }
+.header-image {
+  float: none;
+}
+.header-image img {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+}
 
-    @media screen and (max-width: 56.874em) {
-      .menu-image,
-      .hovered-image {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-      }
-      #site-navigation {
-        margin-top: 1em;
-      }
-    }
+@media screen and (max-width: 56.874em) {
+  .menu-image,
+  .hovered-image {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #site-navigation {
+    margin-top: 1em;
+  }
+}
 
-    @media screen and (min-width: 56.875em) {
-      .menu-image-title {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-      }
-      li li .menu-image-title {
-        border: 0;
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: auto;
-        padding: 0;
-        position: inherit;
-        width: auto;
-      }
-      .site-header-menu {
-        width: 100%;
-      }
-      .main-navigation .menu-item-has-children > a::after {
-        bottom: 0.6em;
-        top: auto;
-      }
-      #external-link-navigation {
-        text-align: center;
-      }
-      #external-link-navigation a {
-        padding: .2em;
-        display: block;
-        width: 100%;
-      }
-      #external-link-navigation img {
-        display: block;
-        max-width: 100%;
-        width: 100%;
-      }
-      #external-link-navigation .menu-item-has-children a {
-        padding-right: 1em;
-        top: auto;
-      }
-      #external-link-navigation li li a {
-        padding: 0.65625em 0.875em;
-        width: 12.6875em;
-      }
-      #external-link-navigation .menu-image {
-        width: 100%;
-      }
-      #external-link-navigation .menu-external-links-container {
-        width: 100%;
-        text-align: center;
-      }
-      #external-link-navigation .menu-external-links-container > ul {
-        width: 100%;
-        display: inline-block;
-      }
-      #external-link-navigation .menu-external-links-container > ul > li {
-        min-height: 60px;
-        background-position: top center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-align: center;
-      }
-      #external-link-navigation .menu-external-links-container > ul > li img {
-        width: 100%;
-      }
-      #external-link-navigation .menu-external-links-container > ul > li .hovered-image {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-        margin-left: 0 !important;
-      }
-      #external-link-navigation .menu-external-links-container > ul > li:hover .hovered-image, #external-link-navigation .menu-external-links-container > ul > li:focus .hovered-image {
-        border: 0;
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: auto;
-        padding: 0;
-        position: inherit;
-        width: auto;
-        width: 100%;
-        margin-left: 0 !important;
-      }
-      #external-link-navigation .menu-external-links-container > ul > li:hover .menu-image, #external-link-navigation .menu-external-links-container > ul > li:focus .menu-image {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-      }
-      #external-link-navigation .blog {
-        width: 15%;
-      }
-      #external-link-navigation .blog img {
-        width: 100%;
-        max-width: 154px;
-      }
-      #external-link-navigation .farm-hack {
-        width: 11%;
-      }
-      #external-link-navigation .farm-hack img {
-        width: 100%;
-        max-width: 112px;
-      }
-      #external-link-navigation .donate {
-        width: 22%;
-      }
-      #external-link-navigation .donate img {
-        max-width: 222px;
-      }
-      #external-link-navigation .join-mailing-list {
-        width: 22%;
-      }
-      #external-link-navigation .join-mailing-list img {
-        max-width: 225px;
-      }
-      #external-link-navigation .our-land {
-        width: 30%;
-      }
-      #external-link-navigation .our-land img {
-        max-width: 300px;
-      }
-    }
+@media screen and (min-width: 56.875em) {
+  .menu-image-title {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  li li .menu-image-title {
+    border: 0;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: inherit;
+    width: auto;
+  }
+  .site-header-menu {
+    width: 100%;
+  }
+  .main-navigation .menu-item-has-children > a::after {
+    bottom: 0.6em;
+    top: auto;
+  }
+  #external-link-navigation {
+    text-align: center;
+  }
+  #external-link-navigation a {
+    padding: .2em;
+    display: block;
+    width: 100%;
+  }
+  #external-link-navigation img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  #external-link-navigation .menu-item-has-children a {
+    padding-right: 1em;
+    top: auto;
+  }
+  #external-link-navigation li li a {
+    padding: 0.65625em 0.875em;
+    width: 12.6875em;
+  }
+  #external-link-navigation .menu-image {
+    width: 100%;
+  }
+  #external-link-navigation .menu-external-links-container {
+    width: 100%;
+    text-align: center;
+  }
+  #external-link-navigation .menu-external-links-container > ul {
+    width: 100%;
+    display: inline-block;
+  }
+  #external-link-navigation .menu-external-links-container > ul > li {
+    min-height: 60px;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  #external-link-navigation .menu-external-links-container > ul > li img {
+    width: 100%;
+  }
+  #external-link-navigation .menu-external-links-container > ul > li .hovered-image {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    margin-left: 0 !important;
+  }
+  #external-link-navigation .menu-external-links-container > ul > li:hover .hovered-image, #external-link-navigation .menu-external-links-container > ul > li:focus .hovered-image {
+    border: 0;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: inherit;
+    width: auto;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  #external-link-navigation .menu-external-links-container > ul > li:hover .menu-image, #external-link-navigation .menu-external-links-container > ul > li:focus .menu-image {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #external-link-navigation .blog {
+    width: 15%;
+  }
+  #external-link-navigation .blog img {
+    width: 100%;
+    max-width: 154px;
+  }
+  #external-link-navigation .farm-hack {
+    width: 11%;
+  }
+  #external-link-navigation .farm-hack img {
+    width: 100%;
+    max-width: 112px;
+  }
+  #external-link-navigation .donate {
+    width: 22%;
+  }
+  #external-link-navigation .donate img {
+    max-width: 222px;
+  }
+  #external-link-navigation .join-mailing-list {
+    width: 22%;
+  }
+  #external-link-navigation .join-mailing-list img {
+    max-width: 225px;
+  }
+  #external-link-navigation .our-land {
+    width: 30%;
+  }
+  #external-link-navigation .our-land img {
+    max-width: 300px;
+  }
+}
