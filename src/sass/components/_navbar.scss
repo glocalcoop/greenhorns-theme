@@ -20,7 +20,8 @@
     .rss a, 
     .instagram a, 
     .flickr a, 
-    .facebook a {
+    .facebook a,
+    .vimeo a {
        @extend .icon-social;
     }
 
@@ -62,6 +63,14 @@
 
     .twitter a:hover {
         @include sprite($social-rss_over);
+    }
+
+    .vimeo a {
+        @include sprite($social-vimeo);
+    }
+
+    .vimeo a:hover {
+        @include sprite($social-vimeo_over);
     }
 }
 

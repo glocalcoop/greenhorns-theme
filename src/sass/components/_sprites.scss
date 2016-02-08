@@ -1,13 +1,15 @@
 $social-flickr: -0px -0px 54px 23px;
 $social-flickr_over: -0px -23px 54px 23px;
-$social-facebook: -0px -46px 34px 34px;
-$social-facebook_over: -0px -80px 34px 34px;
-$social-rss: -0px -114px 35px 34px;
-$social-rss_over: -0px -148px 35px 34px;
-$social-twitter: -0px -182px 35px 34px;
-$social-twitter_over: -0px -216px 35px 34px;
-$social-instagram: -0px -250px 36px 36px;
-$social-instagram_over: -0px -286px 36px 36px;
+$social-rss: -0px -46px 35px 34px;
+$social-facebook: -0px -80px 34px 34px;
+$social-twitter_over: -0px -114px 35px 34px;
+$social-twitter: -0px -148px 35px 34px;
+$social-facebook_over: -0px -182px 34px 34px;
+$social-rss_over: -0px -216px 35px 34px;
+$social-instagram_over: -0px -250px 36px 36px;
+$social-instagram: -0px -286px 36px 36px;
+$social-vimeo: -0px -322px 36px 36px;
+$social-vimeo_over: -0px -358px 36px 36px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }

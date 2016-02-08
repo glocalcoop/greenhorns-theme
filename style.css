@@ -219,7 +219,8 @@ ol {
 .site-header .social-navigation .rss a,
 .site-header .social-navigation .instagram a,
 .site-header .social-navigation .flickr a,
-.site-header .social-navigation .facebook a {
+.site-header .social-navigation .facebook a,
+.site-header .social-navigation .vimeo a {
     background-image: url("assets/images/sprite-social.png");
 }
 .site-header .social-navigation {
@@ -234,7 +235,7 @@ ol {
     content: none !important;
 }
 .site-header .social-navigation .facebook a {
-    background-position: 0px -46px;
+    background-position: 0px -80px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
@@ -242,7 +243,7 @@ ol {
     height: 34px;
 }
 .site-header .social-navigation .facebook a:hover {
-    background-position: 0px -80px;
+    background-position: 0px -182px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
@@ -266,14 +267,6 @@ ol {
     height: 23px;
 }
 .site-header .social-navigation .instagram a {
-    background-position: 0px -250px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: block;
-    width: 36px;
-    height: 36px;
-}
-.site-header .social-navigation .instagram a:hover {
     background-position: 0px -286px;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -281,8 +274,16 @@ ol {
     width: 36px;
     height: 36px;
 }
+.site-header .social-navigation .instagram a:hover {
+    background-position: 0px -250px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 36px;
+    height: 36px;
+}
 .site-header .social-navigation .rss a {
-    background-position: 0px -114px;
+    background-position: 0px -46px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
@@ -290,7 +291,7 @@ ol {
     height: 34px;
 }
 .site-header .social-navigation .rss a:hover {
-    background-position: 0px -148px;
+    background-position: 0px -216px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
@@ -298,7 +299,7 @@ ol {
     height: 34px;
 }
 .site-header .social-navigation .twitter a {
-    background-position: 0px -182px;
+    background-position: 0px -148px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
@@ -306,12 +307,28 @@ ol {
     height: 34px;
 }
 .site-header .social-navigation .twitter a:hover {
-    background-position: 0px -148px;
+    background-position: 0px -216px;
     background-repeat: no-repeat;
     overflow: hidden;
     display: block;
     width: 35px;
     height: 34px;
+}
+.site-header .social-navigation .vimeo a {
+    background-position: 0px -322px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+.site-header .social-navigation .vimeo a:hover {
+    background-position: 0px -358px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 36px;
+    height: 36px;
 }
 @media screen and (min-width: 56.875em) {
     .site-header .social-navigation .social-links-menu {
