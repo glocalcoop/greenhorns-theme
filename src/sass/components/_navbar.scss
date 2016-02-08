@@ -1,7 +1,91 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the image component.
+// This file contains all styles related to the navbar component.
 // -----------------------------------------------------------------------------
 
+.site-header .social-navigation {
+    display: inherit;
+    margin-bottom: 1em;
+
+    li {
+        a {
+            border: none;
+            border-radius: 0;
+            &:before {
+                content: none !important;
+            }
+        }
+    }
+
+    .twitter a, 
+    .rss a, 
+    .instagram a, 
+    .flickr a, 
+    .facebook a {
+        background: url(assets/images/social/social_networks.png) no-repeat;
+    }
+
+    .facebook a {
+        background-position: 0 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .facebook a:hover {
+        background-position: 0 -30px ;
+    }
+
+    .flickr a {
+        background-position: -120px -5px ;
+        width: 46px;
+        height: 15px;
+    }
+
+    .flickr a:hover {
+        background-position: -120px -35px ;
+    }
+
+    .instagram a {
+        background-position: -90px 0;
+        width: 28px;
+        height: 28px;
+    }
+
+    .instagram a:hover {
+        background-position: -90px -30px ;
+    }
+
+    .rss a {
+        background-position: -60px 0;
+        width: 27px;
+        height: 26px;
+    }
+
+    .rss a:hover {
+        background-position: -60px -30px ;
+    }
+
+    .twitter a {
+        background-position: -30px 0;
+        width: 27px;
+        height: 26px;
+    }
+
+    .twitter a:hover {
+        background-position: -30px -30px ;
+    }
+}
+
+@media screen and (min-width: 56.875em) {
+
+    .site-header .social-navigation {
+
+        .social-links-menu {
+            float: right;
+        }
+
+    }
+
+}
 
 @media screen and (max-width: 56.874em) {
     // Hide images on smaller screens
@@ -132,7 +216,7 @@
             // max-width: 154px;
             img {
                 width: 100%;
-                max-width: 154px;
+                max-width: 149px;
             }
         }
         .farm-hack {
