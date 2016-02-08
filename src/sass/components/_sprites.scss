@@ -1,0 +1,38 @@
+$social-flickr: -0px -0px 54px 23px;
+$social-flickr_over: -0px -23px 54px 23px;
+$social-facebook: -0px -46px 34px 34px;
+$social-facebook_over: -0px -80px 34px 34px;
+$social-rss: -0px -114px 35px 34px;
+$social-rss_over: -0px -148px 35px 34px;
+$social-twitter: -0px -182px 35px 34px;
+$social-twitter_over: -0px -216px 35px 34px;
+$social-instagram: -0px -250px 36px 36px;
+$social-instagram_over: -0px -286px 36px 36px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+  @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+  @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+  @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+.icon-social {
+  background-image: url('assets/images/sprite-social.png');
+}
