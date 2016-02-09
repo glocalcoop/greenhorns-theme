@@ -2,7 +2,8 @@
 // This file contains all styles related to the navbar component.
 // -----------------------------------------------------------------------------
 
-.site-header .social-navigation {
+.site-header .social-navigation,
+.site-footer .social-navigation  {
     display: inherit;
     margin-bottom: .5em;
 
