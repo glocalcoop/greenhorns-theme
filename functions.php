@@ -76,17 +76,10 @@ add_action( 'after_setup_theme', 'greenhorns_setup' );
 /**
  * Enqueue parent and child styles
  */
+add_action( 'wp_enqueue_scripts', 'greenhorns_enqueue_styles' );
 function greenhorns_enqueue_styles() {
-
-    // Dequeue Menu Image plugin styling
     wp_dequeue_style( 'menu-image' );
+    
+    wp_enqueue_style( 'twentysixteen-parent-style', get_template_directory_uri() . '/style.css' );
 
-    $parent_style = 'parent-style';
-
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style )
-    );
 }
-
